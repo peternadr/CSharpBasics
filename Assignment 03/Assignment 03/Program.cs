@@ -36,26 +36,32 @@ namespace Assignment_03
 
             #region Question 04
             //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block
-            try
-            {
-                int num1 = 10;
-                int num2 = 0;
-                int result = num1 / num2;
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Cannot divide by zero");
-            }
-            finally
-            {
-                Console.WriteLine("Done");
-            }
+            //try
+            //{
+            //    int num1 = 10;
+            //    int num2 = 0;
+            //    int result = num1 / num2;
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("Cannot divide by zero");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Done");
+            //}
             #endregion
 
             #region Question 05
             //Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            double d = pages;
+            //int pages = 300;
+            //double d = pages;
+            #endregion
+
+            #region Question 06
+            //Declare a double price = 49.99; then convert it into an int using a cast.
+            double price = 49.99;
+            int i = (int)price;
             #endregion
         }
     }
