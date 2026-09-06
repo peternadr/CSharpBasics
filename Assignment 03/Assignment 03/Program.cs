@@ -33,6 +33,24 @@ namespace Assignment_03
             //int pages = 464;
 
             #endregion
+
+            #region Question 04
+            //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block
+            try
+            {
+                int num1 = 10;
+                int num2 = 0;
+                int result = num1 / num2;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+            #endregion
         }
     }
 }
