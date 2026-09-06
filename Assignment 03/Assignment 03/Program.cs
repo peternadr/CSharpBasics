@@ -86,9 +86,18 @@ namespace Assignment_03
 
             #region Question 09
             //Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
-            int pages = 464;
-            string pagesString = pages.ToString();
-            Console.WriteLine(pagesString.GetType());
+            //int pages = 464;
+            //string pagesString = pages.ToString();
+            //Console.WriteLine(pagesString.GetType());
+            #endregion
+
+            #region Question 10
+            //Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            int copies = 100;
+            object obj = copies;
+            Console.WriteLine(obj);
+            int copies2 = (int)obj;
+            Console.WriteLine(copies2);
             #endregion
         }
     }
