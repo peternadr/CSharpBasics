@@ -205,11 +205,25 @@ to print each book with its position number, like 1. Clean Code.*/
         /*Using the same books array, loop through it and print each title, but stop completely (break) once
         you reach "Refactoring".*/
 
+        //for (int i = 0; i < books.Length; i++)
+        //{
+        //    if (books[i] == "Refactoring")
+        //    {
+        //        break;
+        //    }
+        //    Console.WriteLine($"Book : {books[i]}");
+        //}
+        #endregion
+
+        #region Question 17
+        /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+continue, don't stop the loop).*/
+
         for (int i = 0; i < books.Length; i++)
         {
-            if (books[i] == "Refactoring")
+            if (books[i] == "The Pragmatic Programmer")
             {
-                break;
+                continue;
             }
             Console.WriteLine($"Book : {books[i]}");
         }
