@@ -162,7 +162,7 @@ variable sizeLabel (same rule as question 8: long if pages > 300).*/
 to print each book with its position number, like 1. Clean Code.*/
 
         // Declare an array of strings called books that contains the titles "Clean Code", "The Pragmatic Programmer", and "Refactoring".
-        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+        //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
         // Print books[] elements
         //for (int i = 0; i < books.Length; i++)
@@ -219,14 +219,35 @@ to print each book with its position number, like 1. Clean Code.*/
         /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
 continue, don't stop the loop).*/
 
-        for (int i = 0; i < books.Length; i++)
-        {
-            if (books[i] == "The Pragmatic Programmer")
-            {
-                continue;
-            }
-            Console.WriteLine($"Book : {books[i]}");
-        }
+        //for (int i = 0; i < books.Length; i++)
+        //{
+        //    if (books[i] == "The Pragmatic Programmer")
+        //    {
+        //        continue;
+        //    }
+        //    Console.WriteLine($"Book : {books[i]}");
+        //}
         #endregion
+
+        #region Question 18
+        /*Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+use return to exit the method early instead of printing anything.*/
+
+        PrintFirstBook();
+        #endregion
+    }
+    static void PrintFirstBook()
+    {
+        string[] books = {};
+
+        if (books.Length == 0)
+        {
+            
+            return;
+        }
+        else
+        {
+            Console.WriteLine(books[0]);
+        }
     }
 }
