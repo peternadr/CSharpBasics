@@ -93,15 +93,32 @@ Pages: 464" using the + operator.*/
         300, otherwise prints "Short Book".*/
 
         // Declare an integer variable pages and assign it the value 464.
+        //int pages = 464;
+
+        //if(pages > 300)
+        //{
+        //    Console.WriteLine("Long Book");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Short Book");
+        //}
+        #endregion
+
+        #region Question 09
+        /*Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+greater than 300 and isAvailable is true. Use the && operator.*/
+
+        // Declare an integer variable pages and assign it the value 464.
         int pages = 464;
 
-        if(pages > 300)
+        // Declare a boolean variable isAvailable and assign it the value true.
+        bool isAvailable = true;
+
+        
+        if (pages > 300 && isAvailable)
         {
-            Console.WriteLine("Long Book");
-        }
-        else
-        {
-            Console.WriteLine("Short Book");
+            Console.WriteLine("You can borrow this book");
         }
         #endregion
     }
