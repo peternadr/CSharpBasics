@@ -195,9 +195,23 @@ to print each book with its position number, like 1. Clean Code.*/
 
         #region Question 15
         /*Using the same books array, use a foreach loop to print every book title.*/
-        foreach (string book in books)
+        //foreach (string book in books)
+        //{
+        //    Console.WriteLine($"Book : {book}");
+        //}
+        #endregion
+
+        #region Question 16
+        /*Using the same books array, loop through it and print each title, but stop completely (break) once
+        you reach "Refactoring".*/
+
+        for (int i = 0; i < books.Length; i++)
         {
-            Console.WriteLine($"Book : {book}");
+            if (books[i] == "Refactoring")
+            {
+                break;
+            }
+            Console.WriteLine($"Book : {books[i]}");
         }
         #endregion
     }
