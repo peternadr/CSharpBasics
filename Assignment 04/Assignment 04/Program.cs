@@ -128,21 +128,33 @@ greater than 300 and isAvailable is true. Use the && operator.*/
 
         // Declare a string variable title and assign it the value "Refactoring".
         string title = "Refactoring";
-        
-        switch (title)
-        {
-            case "Clean Code":
-                Console.WriteLine("Great choice!");
-                break;
-            case "Refactoring":
-                Console.WriteLine("Nice pick!");
-                break;
-            default:
-                Console.WriteLine("Never heard of it");
-                break;
+
+        //switch (title)
+        //{
+        //    case "Clean Code":
+        //        Console.WriteLine("Great choice!");
+        //        break;
+        //    case "Refactoring":
+        //        Console.WriteLine("Nice pick!");
+        //        break;
+        //    default:
+        //        Console.WriteLine("Never heard of it");
+        //        break;
 
 
-        }
+        //}
+        #endregion
+
+        #region Question 11
+        /*Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
+variable sizeLabel (same rule as question 8: long if pages > 300).*/
+
+        // Declare an integer variable pages and assign it the value 464.
+        int pages = 464;
+
+        // Use the ternary operator to assign a message based on the value of pages.    
+        string Message = pages > 300 ? "Long Book" : "Short Book";
+        Console.WriteLine(Message);
         #endregion
     }
 }
