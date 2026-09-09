@@ -72,7 +72,13 @@ Pages: 464" using the + operator.*/
         int pages = 464;
 
         // Print the values of title and pages in a single line using string concatenation.
-        Console.WriteLine("Book: " + title + ", Pages: " + pages);
+        //Console.WriteLine("Book: " + title + ", Pages: " + pages);
+        #endregion
+
+        #region Question 06
+        //Build the same sentence as above, but using string interpolation ($"...").
+
+        Console.WriteLine($"Book: {title}, Pages: {pages}");
         #endregion
     }
 }
