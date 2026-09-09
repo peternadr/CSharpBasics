@@ -110,15 +110,38 @@ Pages: 464" using the + operator.*/
 greater than 300 and isAvailable is true. Use the && operator.*/
 
         // Declare an integer variable pages and assign it the value 464.
-        int pages = 464;
+        //int pages = 464;
 
         // Declare a boolean variable isAvailable and assign it the value true.
-        bool isAvailable = true;
+        //bool isAvailable = true;
 
+
+        //if (pages > 300 && isAvailable)
+        //{
+        //    Console.WriteLine("You can borrow this book");
+        //}
+        #endregion
+
+        #region Question 10
+        /*Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.*/
+
+        // Declare a string variable title and assign it the value "Refactoring".
+        string title = "Refactoring";
         
-        if (pages > 300 && isAvailable)
+        switch (title)
         {
-            Console.WriteLine("You can borrow this book");
+            case "Clean Code":
+                Console.WriteLine("Great choice!");
+                break;
+            case "Refactoring":
+                Console.WriteLine("Nice pick!");
+                break;
+            default:
+                Console.WriteLine("Never heard of it");
+                break;
+
+
         }
         #endregion
     }
