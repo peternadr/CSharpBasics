@@ -66,10 +66,10 @@ internal class Program
 Pages: 464" using the + operator.*/
 
         // Declear a string variable title and assign it the value "Clean Code".
-        string title = "Clean Code";
+        //string title = "Clean Code";
 
         // Declare an integer variable pages and assign it the value 464.
-        int pages = 464;
+        //int pages = 464;
 
         // Print the values of title and pages in a single line using string concatenation.
         //Console.WriteLine("Book: " + title + ", Pages: " + pages);
@@ -84,8 +84,25 @@ Pages: 464" using the + operator.*/
         #region Question 07
         //Build the same sentence again, but using string.Format().
 
-        Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
+        //Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
 
+        #endregion
+
+        #region Question 08
+        /*Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+        300, otherwise prints "Short Book".*/
+
+        // Declare an integer variable pages and assign it the value 464.
+        int pages = 464;
+
+        if(pages > 300)
+        {
+            Console.WriteLine("Long Book");
+        }
+        else
+        {
+            Console.WriteLine("Short Book");
+        }
         #endregion
     }
 }
