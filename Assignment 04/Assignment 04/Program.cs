@@ -167,8 +167,10 @@ to print each book with its position number, like 1. Clean Code.*/
         // Print books[] elements
         for (int i = 0; i < books.Length; i++)
         {
-            Console.WriteLine($"position : {i} Book : {books[i]}");
+            Console.WriteLine($"position : {i + 1} Book : {books[i]}");
         }
         #endregion
+
+      
     }
 }
