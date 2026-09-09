@@ -174,12 +174,12 @@ to print each book with its position number, like 1. Clean Code.*/
         #region Question 13
         /*Using the same books array, use a while loop to print every book title.*/
 
-        int i = 0;
-        while (i < books.Length)
-        {
-            Console.WriteLine($"position : {i + 1} Book : {books[i]}");
-            i++;
-        }
+        //int i = 0;
+        //while (i < books.Length)
+        //{
+        //    Console.WriteLine($"position : {i + 1} Book : {books[i]}");
+        //    i++;
+        //}
         #endregion
 
         #region Question 14
@@ -191,6 +191,14 @@ to print each book with its position number, like 1. Clean Code.*/
         //    Console.WriteLine("Checking book...");
         //    i++;
         //} while (i < 2);
+        #endregion
+
+        #region Question 15
+        /*Using the same books array, use a foreach loop to print every book title.*/
+        foreach (string book in books)
+        {
+            Console.WriteLine($"Book : {book}");
+        }
         #endregion
     }
 }
