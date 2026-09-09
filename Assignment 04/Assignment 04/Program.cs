@@ -153,8 +153,22 @@ variable sizeLabel (same rule as question 8: long if pages > 300).*/
         int pages = 464;
 
         // Use the ternary operator to assign a message based on the value of pages.    
-        string Message = pages > 300 ? "Long Book" : "Short Book";
-        Console.WriteLine(Message);
+        //string Message = pages > 300 ? "Long Book" : "Short Book";
+        //Console.WriteLine(Message);
+        #endregion
+
+        #region Question 12
+        /*Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+to print each book with its position number, like 1. Clean Code.*/
+
+        // Declare an array of strings called books that contains the titles "Clean Code", "The Pragmatic Programmer", and "Refactoring".
+        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+        // Print books[] elements
+        for (int i = 0; i < books.Length; i++)
+        {
+            Console.WriteLine($"position : {i} Book : {books[i]}");
+        }
         #endregion
     }
 }
