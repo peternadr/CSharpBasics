@@ -133,7 +133,15 @@ it once with only a title, and once passing both a title and pages.*/
             /*Using the PrintBookInfo method from the question above, call it by naming the
 parameters, passing pages before title.*/
 
-            Helper.PrintBookInfo(pages: 400 , title :"clean code");
+            //Helper.PrintBookInfo(pages: 400 , title :"clean code");
+
+            #endregion
+
+            #region Question 12
+            /*Write a method PrintAllTitles(params string[] titles) that prints each title on its own line.
+Call it with three book titles.*/
+
+            Helper.PrintAllTitles("clean book", "ASP.NET", "python");
 
             #endregion
         }

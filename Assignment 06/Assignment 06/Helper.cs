@@ -50,5 +50,14 @@ namespace Assignment_06
         {
             Console.WriteLine($"Book title is: {title}, Book pages is: {pages} ");
         }
+
+        public static void PrintAllTitles(params string[] titles)
+        {
+            foreach(string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+            
+        }
     }
 }
