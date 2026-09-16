@@ -80,12 +80,26 @@ see, and why?*/
 Call it and print pages afterward. How is the result different from question 5?*/
 
             //Define a variable of type int and assign it the value 400
-            int pages = 400;
+            //int pages = 400;
 
-            Console.WriteLine(pages); //400
-            Helper.AddBonusPages(ref pages);
-            Console.WriteLine(pages); //450
+            //Console.WriteLine(pages); //400
+            //Helper.AddBonusPages(ref pages);
+            //Console.WriteLine(pages); //450
             //the value type was passed by reference, the method could modify the original variable, so the value of pages changed. 
+
+            #endregion
+
+            #region Question 08
+            /*Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+new array { 10.0, 12.5, 15.0 }. Call it with your prices array and print prices.Length
+afterward.*/
+
+            // creat a double array and assign it values { 25.5, 40.0 }
+            double[] prices = { 25.5, 40.0 };
+
+            Console.WriteLine(prices.Length);//2
+            Helper.ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);//3
 
             #endregion
         }

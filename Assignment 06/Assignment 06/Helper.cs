@@ -27,5 +27,11 @@ namespace Assignment_06
         {
             prices[0] -= 5;
         }
+
+        public static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[]{ 10.0, 12.5, 15.0 };
+            
+        }
     }
 }
