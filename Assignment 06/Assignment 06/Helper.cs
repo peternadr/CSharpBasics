@@ -14,5 +14,9 @@ namespace Assignment_06
             Console.WriteLine("Book title: " + title);
         }
 
+        public static void AddBonusPages(int pages)
+        {
+            pages += 50;
+        }
     }
 }

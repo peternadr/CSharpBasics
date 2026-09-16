@@ -42,7 +42,21 @@ shelf 1 has 1, 4 copies. Print the number of copies on shelf 1, slot 0.*/
             /*Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
 "Clean Code".*/
 
-            Helper.PrintBookTitle("Clean Code");
+            //Helper.PrintBookTitle("Clean Code");
+
+            #endregion
+
+            #region Question 05
+            /*Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+int pages = 400; and print pages afterward. What do you expect to see, and why?*/
+
+            // Define a variable of type int and assign it the value 400
+            int pages = 400;
+
+            Console.WriteLine(pages); // 400
+            Helper.AddBonusPages(pages);
+            Console.WriteLine(pages); // 400
+            //Because a copy of the pages value was passed to the method, changing it didn't affect the original value.
 
             #endregion
         }
