@@ -45,5 +45,10 @@ namespace Assignment_06
             }
             return result;
         }
+
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Book title is: {title}, Book pages is: {pages} ");
+        }
     }
 }

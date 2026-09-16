@@ -109,14 +109,23 @@ price to 25.5 if title is "Clean Code", otherwise returns false and sets price t
 and print the price if found*/
 
             // declear a string title and assign it "Clean Code"
-            string title = "Clean Code";
-            // declear a double price
-            double price;
-            
-            if(Helper.TryGetPrice(title, out price))
-            {
-                Console.WriteLine(price); // 25.5
-            }
+            //string title = "Clean Code";
+            //// declear a double price
+            //double price;
+
+            //if(Helper.TryGetPrice(title, out price))
+            //{
+            //    Console.WriteLine(price); // 25.5
+            //}
+
+            #endregion
+
+            #region Question 10
+            /*Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call
+it once with only a title, and once passing both a title and pages.*/
+
+            Helper.PrintBookInfo("clean book");
+            Helper.PrintBookInfo("clean book", 400);
 
             #endregion
         }
