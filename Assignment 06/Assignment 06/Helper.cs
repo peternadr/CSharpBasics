@@ -18,6 +18,10 @@ namespace Assignment_06
         {
             pages += 50;
         }
+        public static void AddBonusPages( ref int pages)
+        {
+            pages += 50;
+        }
 
         public static void ApplyDiscount(double[] prices)
         {

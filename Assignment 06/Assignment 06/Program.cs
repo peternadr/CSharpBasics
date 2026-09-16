@@ -66,12 +66,26 @@ with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do yo
 see, and why?*/
 
             // creat a double array and assign it values { 25.5, 40.0 }
-            double[] prices = { 25.5, 40.0 };
+            //double[] prices = { 25.5, 40.0 };
 
-            Console.WriteLine(prices[0]); // 25.5
-            Helper.ApplyDiscount(prices);
-            Console.WriteLine(prices[0]); // 20.5
+            //Console.WriteLine(prices[0]); // 25.5
+            //Helper.ApplyDiscount(prices);
+            //Console.WriteLine(prices[0]); // 20.5
             // Because a reference to the object was passed to the method, the method could modify the object, so the value of the first element of the array changed.
+
+            #endregion
+
+            #region Question 07
+            /*Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+Call it and print pages afterward. How is the result different from question 5?*/
+
+            //Define a variable of type int and assign it the value 400
+            int pages = 400;
+
+            Console.WriteLine(pages); //400
+            Helper.AddBonusPages(ref pages);
+            Console.WriteLine(pages); //450
+            //the value type was passed by reference, the method could modify the original variable, so the value of pages changed. 
 
             #endregion
         }
