@@ -51,12 +51,27 @@ shelf 1 has 1, 4 copies. Print the number of copies on shelf 1, slot 0.*/
 int pages = 400; and print pages afterward. What do you expect to see, and why?*/
 
             // Define a variable of type int and assign it the value 400
-            int pages = 400;
+            //int pages = 400;
 
-            Console.WriteLine(pages); // 400
-            Helper.AddBonusPages(pages);
-            Console.WriteLine(pages); // 400
+            //Console.WriteLine(pages); // 400
+            //Helper.AddBonusPages(pages);
+            //Console.WriteLine(pages); // 400
             //Because a copy of the pages value was passed to the method, changing it didn't affect the original value.
+
+            #endregion
+
+            #region Question 06
+            /*Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to
+see, and why?*/
+
+            // creat a double array and assign it values { 25.5, 40.0 }
+            double[] prices = { 25.5, 40.0 };
+
+            Console.WriteLine(prices[0]); // 25.5
+            Helper.ApplyDiscount(prices);
+            Console.WriteLine(prices[0]); // 20.5
+            // Because a reference to the object was passed to the method, the method could modify the object, so the value of the first element of the array changed.
 
             #endregion
         }
