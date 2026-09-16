@@ -34,7 +34,15 @@ shelf 1 has 1, 4 copies. Print the number of copies on shelf 1, slot 0.*/
             /*Write a method called PrintWelcomeMessage that takes no parameters and prints
 "Welcome to the Library!". Call it from Main.*/
 
-            Helper.PrintWelcomeMessage();
+            //Helper.PrintWelcomeMessage();
+
+            #endregion
+
+            #region Question 04
+            /*Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+"Clean Code".*/
+
+            Helper.PrintBookTitle("Clean Code");
 
             #endregion
         }

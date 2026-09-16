@@ -9,5 +9,10 @@ namespace Assignment_06
             Console.WriteLine("Welcome to the Library!");
         }
 
+        public static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
+        }
+
     }
 }
