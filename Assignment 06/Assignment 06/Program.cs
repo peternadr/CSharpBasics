@@ -95,11 +95,28 @@ new array { 10.0, 12.5, 15.0 }. Call it with your prices array and print prices.
 afterward.*/
 
             // creat a double array and assign it values { 25.5, 40.0 }
-            double[] prices = { 25.5, 40.0 };
+            //double[] prices = { 25.5, 40.0 };
 
-            Console.WriteLine(prices.Length);//2
-            Helper.ReplaceArray(ref prices);
-            Console.WriteLine(prices.Length);//3
+            //Console.WriteLine(prices.Length);//2
+            //Helper.ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length);//3
+
+            #endregion
+
+            #region Question 09
+            /*Write a method bool TryGetPrice(string title, out double price) that returns true and sets
+price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it
+and print the price if found*/
+
+            // declear a string title and assign it "Clean Code"
+            string title = "Clean Code";
+            // declear a double price
+            double price;
+            
+            if(Helper.TryGetPrice(title, out price))
+            {
+                Console.WriteLine(price); // 25.5
+            }
 
             #endregion
         }

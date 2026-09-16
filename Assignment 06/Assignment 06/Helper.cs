@@ -33,5 +33,17 @@ namespace Assignment_06
             prices = new double[]{ 10.0, 12.5, 15.0 };
             
         }
+
+        public static bool TryGetPrice(string title, out double price)
+        {
+            bool result = false;
+            price = 0.0;
+            if(title == "Clean Code")
+            {
+                price = 25.5;
+                result = true;
+            }
+            return result;
+        }
     }
 }
