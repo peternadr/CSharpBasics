@@ -66,10 +66,24 @@ Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.*/
             /*Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
 print the result.*/
 
-            string genreText = "Science";
-            Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
-            Console.WriteLine(genre);
+            //string genreText = "Science";
+            //Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
+            //Console.WriteLine(genre);
 
+            #endregion
+
+            #region Question 09
+            /*Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
+attempt the conversion. Print "Unknown genre" if it fails.*/
+
+            string genreText = "Mystery";
+            bool flag = Enum.TryParse(genreText, out Genre genre);
+
+            if (!flag)
+            {
+                Console.WriteLine("Unknown genre");
+            }
+           
             #endregion
         }
     }
