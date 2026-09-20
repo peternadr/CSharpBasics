@@ -27,8 +27,15 @@ Why?*/
             #region Question 03
             /*Add a public string Title; field to Book. Set it and print it from Main.*/
 
-            book.Title = "Clean code";
-            Console.WriteLine(book.Title);
+            //book.Title = "Clean code";
+            //Console.WriteLine(book.Title);
+            #endregion
+
+            #region Question 04
+            /*Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+assign it Genre.Science, and print it.*/
+            book.genre = Genre.Science;
+            Console.WriteLine(book.genre);
             #endregion
         }
     }

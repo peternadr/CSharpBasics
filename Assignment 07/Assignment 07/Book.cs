@@ -10,4 +10,6 @@ internal class Book
     internal int copiesInStock = 5;
 
     public string Title;
+
+    public Genre genre;
 }
