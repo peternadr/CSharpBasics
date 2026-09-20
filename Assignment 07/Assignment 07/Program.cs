@@ -43,11 +43,17 @@ assign it Genre.Science, and print it.*/
 Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.*/
 
 
-            Console.WriteLine((int)Genre.Fiction); // 1
-            Console.WriteLine((int)Genre.NonFiction); // 2
-            Console.WriteLine((int)Genre.Science); // 3
+            //Console.WriteLine((int)Genre.Fiction); // 1
+            //Console.WriteLine((int)Genre.NonFiction); // 2
+            //Console.WriteLine((int)Genre.Science); // 3
 
 
+            #endregion
+
+            #region Question 06
+            /*Given int genreNumber = 1;, cast it into a Genre value and print the result.*/
+            book.genre = (Genre)1;
+            Console.WriteLine(book.genre); // Fiction
             #endregion
         }
     }
