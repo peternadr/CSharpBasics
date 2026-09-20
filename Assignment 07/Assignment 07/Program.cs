@@ -52,8 +52,14 @@ Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.*/
 
             #region Question 06
             /*Given int genreNumber = 1;, cast it into a Genre value and print the result.*/
-            book.genre = (Genre)1;
-            Console.WriteLine(book.genre); // Fiction
+            //book.genre = (Genre)1;
+            //Console.WriteLine(book.genre); // Fiction
+            #endregion
+
+            #region Question 07
+            /*Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.*/
+            Genre genre = Genre.Fiction;
+            Console.WriteLine(genre.ToString());
             #endregion
         }
     }
